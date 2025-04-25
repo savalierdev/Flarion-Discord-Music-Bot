@@ -13,7 +13,8 @@ bot = commands.Bot(command_prefix=bot_prefix, intents=nextcord.Intents.all())
 
 def initialize_cogs():
     if music:
-        cogs.append("cogs.music")
+        cogs.append("cogs.music.music")
+        cogs.append('cogs.presence.presence')
     if moderation:
         cogs.append("cogs.moderation")
     if general:
